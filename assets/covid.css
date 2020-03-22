@@ -1,0 +1,81 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+body {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #f2f1e6;
+    max-width: 700px;
+    margin: auto;
+    transform: rotate(2deg);
+}
+
+div#home {
+    position: relative;
+	width: 600px;
+	padding: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+div#home:before, div#home:after {
+        position: absolute;
+        width: 40%;
+        height: 10px;
+        content: ' ';
+        left: 12px;
+        bottom: 12px;
+        background: transparent;
+        -webkit-transform: skew(-5deg) rotate(-5deg);
+        -moz-transform: skew(-5deg) rotate(-5deg);
+        -ms-transform: skew(-5deg) rotate(-5deg);
+        -o-transform: skew(-5deg) rotate(-5deg);
+        transform: skew(-5deg) rotate(-5deg);
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    } 
+    
+    div#home:after  {
+        left: auto;
+        right: 12px;
+        -webkit-transform: skew(5deg) rotate(5deg);
+        -moz-transform: skew(5deg) rotate(5deg);
+        -ms-transform: skew(5deg) rotate(5deg);
+        -o-transform: skew(5deg) rotate(5deg);
+        transform: skew(5deg) rotate(5deg);
+    }
+
+h1 {
+    font-family: eds-market-bold-slant, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: #781a1a;
+    color: rgb(144,59,59);
+    color: linear-gradient(90deg, rgba(144,59,59,1) 0%, rgba(121,9,9,1) 35%, rgba(119,37,51,1) 100%);
+    line-height: 1.2em;
+    margin-top: 0px;
+}
+
+h2 {
+    font-family: eds-market-bold, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1e1e;
+    line-height: 1.2em;
+}
+
+p {
+    font-family: mr-eaves-xl-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+}
