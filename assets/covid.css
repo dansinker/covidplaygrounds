@@ -11,7 +11,7 @@ body {
     transform: rotate(2deg);
 }
 
-div#home {
+div.flyer {
     position: relative;
 	width: 600px;
 	padding: 50px;
@@ -24,7 +24,7 @@ div#home {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
-div#home:before, div#home:after {
+div.flyer:before, div.flyer:after {
         position: absolute;
         width: 40%;
         height: 10px;
@@ -43,7 +43,7 @@ div#home:before, div#home:after {
         z-index: -1;
     } 
     
-    div#home:after  {
+    div.flyer:after  {
         left: auto;
         right: 12px;
         -webkit-transform: skew(5deg) rotate(5deg);
@@ -51,6 +51,14 @@ div#home:before, div#home:after {
         -ms-transform: skew(5deg) rotate(5deg);
         -o-transform: skew(5deg) rotate(5deg);
         transform: skew(5deg) rotate(5deg);
+    }
+
+    div.mini {
+
+        width: 210px;
+        padding: 10px;
+        box-shadow: 2px 2px 5px grey;
+        transform: rotate(-3deg);
     }
 
 h1 {
@@ -73,9 +81,30 @@ h2 {
     line-height: 1.2em;
 }
 
+a {
+    color: #4c78cf;
+}
+
+a:visited {
+    color: #514069;
+}
+
 p {
     font-family: mr-eaves-xl-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.2em;
+}
+
+p.quote {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+}
+
+p.quote b {
+    font-family: mrs-eaves-xl-serif, serif;
+    font-weight: 700;
+    font-style: italic;
 }
