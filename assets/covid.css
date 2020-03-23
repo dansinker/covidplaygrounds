@@ -98,8 +98,10 @@ p {
 
 p.quote {
     font-family: mrs-eaves-xl-serif, serif;
+    font-size: 1.1em;
+    line-height: 1.3em;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
     text-align: left;
 }
 
